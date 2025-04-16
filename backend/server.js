@@ -12,6 +12,10 @@ app.use(express.json());
 const userRoutes = require('./routes/userRoutes');
 app.use('/api/users', userRoutes);
 
+const taskRoutes = require('./routes/taskRoutes');
+app.use('/api/tasks', taskRoutes);
+
+
 // CONNECT TO MONGO
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
