@@ -1,0 +1,26 @@
+.form-container {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  .toggle-buttons button {
+    width: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .toggle-buttons .active {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .form {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .form.active {
+    display: block;
+  }
+  
