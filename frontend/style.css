@@ -1,26 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
 .form-container {
-    width: 300px;
-    margin: 100px auto;
-    text-align: center;
-  }
-  
-  .toggle-buttons button {
-    width: 50%;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .toggle-buttons .active {
-    background-color: #007BFF;
-    color: white;
-  }
-  
-  .form {
-    display: none;
-    margin-top: 20px;
-  }
-  
-  .form.active {
-    display: block;
-  }
-  
+  width: 400px;
+  margin: 80px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.toggle-buttons .active {
+  background: #007BFF;
+  color: white;
+}
+
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 95%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
